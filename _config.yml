@@ -1,0 +1,69 @@
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Personal info
+name: Rajan Puri
+title: Machine Learning intern at Codespeedy
+email: rajanpuri.07@gmail.com
+website: www.github.com/sproogen/resume-theme
+
+# Social links
+twitter_username: RJN_01
+github_username:  rjn01
+instagram_username: rajan_puri20
+linkedin_username:  [-rajan-puri](https://www.linkedin.com/in/-rajan-puri)
+ 
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+ Hi, My name's Rajan and I'm a Data Science Enthusiast, currently working as Machine Learning/Deep Learning intern at CodeSpeedy.
+ 
+ I have experience in <mark>Data Science</mark> and <mark>Machine Learning</mark>/<mark>Deep Learning</mark> with some basic knowledge in making web apps.
+ 
+  I speak native <mark>Hindi</mark>, fluent <mark>English</mark>.
+
+  I am most skilled in: <mark>Python</mark> , <mark>Machine Learning</mark> and <mark>Deep Learning</mark>
+
+# Experience Section
+# experience_title: Experience
+
+# Projects Section
+# projects_title: Skills
+
+# Education Section
+# educaton_title: Education
+ 
+# Skills section
+# skills_title: SKILLS
+
+# More Section
+# more_title: A Little More About Me
+more_content: | # this will include new lines to allow paragraphs
+  
+  **Additional Experience**
+   - Software engineering virtual experience at ​ JPMorgan Chase & Co.
+   - Volunteer in ​ Umeed- A Drop of Hope​ NGO.
+   
+   Alongside my interests in Data Science and Machine Learning some of my other interests and hobbies are:
+   - Open Source
+   - Listening to music
+   - Reading
+ 
+# Footer
+footer_show_references: true
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag

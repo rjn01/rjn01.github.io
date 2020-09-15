@@ -1,0 +1,33 @@
+# Project template
+- layout: top-middle
+  name: Car Number Plate Extraction
+  github: github.com/rjn01/Car-Plate-Extraction
+  quote: >
+    Extraction of number plate 
+  description: | # this will include new lines to allow paragraphs
+    YOLO Object detection ALgorithm was used to detect the number plate and then the numbner plate was extracted using OpenCV which is then given to OCR API to extract the text from it. It was deployed on the Web using Flask.
+
+# Project template
+- layout: top-middle
+  name: Wiki Bot
+  github: https://github.com/rjn01/Wiki-Bot
+  quote: >
+    WIKIPEDIA TELEGRAM BOT
+  description: | 
+    ​ Telegram Wikipedia Bot which takes the input from the user and fetches the result through Wikipedia's API to provide the result.
+
+# Project template
+- layout: top-middle
+  name: BLACKJACK
+  github: https://github.com/rjn01/BlackJAck
+  description: | 
+    ​ A Python Program which is similar to the Casino game BlackJack.
+    
+# Project template
+- layout: top-middle
+  name: Music Generation
+  github: https://github.com/rjn01/Music-Generation/
+  quote: >
+    Generate Lyrics 
+  description: | 
+    ​ Song is given as the input and a new lyrics is generated using Markov Chains Rule.

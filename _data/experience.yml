@@ -1,0 +1,44 @@
+# Experience template
+- layout: left
+  company: CodeSpeedy Technology Pvt Limited
+  link: https://www.codespeedy.com/
+  job_title: Machine Learning/Deep Learning Intern
+  dates: September 2020 - Present
+  description: | # this will include new lines to allow paragraphs
+    Writing Machine Learning/Deep Learning tutorials and articles for valueml.com
+    
+    Skills used <mark>Python</mark>, <mark>Keras</mark> and <mark>OpenCV</mark> 
+
+- layout: right
+  company: HakinCodes
+  link: https://hakincodes.tech/
+  job_title: Participant at Contributor Hacks,2020
+  dates: August 2020 - October
+  description: | # this will include new lines to allow paragraphs
+    Contributing to Open Source projects.
+     
+    Skills used <mark>Pyhton</mark>, <mark>Keras</mark>, <mark>Git/Github</mark>
+    
+- layout: left
+  company: The SPARKS Foundation
+  link: https://www.thesparksfoundationsingapore.org/
+  job_title: Data Science Intern
+  dates: September 2020 - Present
+  description: | # this will include new lines to allow paragraphs
+    Working on Data Science related tasks involving machine learning algorithms such ass linear regression, KNN and Descision Tree.
+    
+    Skills used <mark>Python</mark>, <mark>Machine Learning</mark> and <mark>Git/Github</mark> 
+
+    
+
+- layout: right
+  company: Quantum AI Systems
+  link: http://www.quantumaisystems.com/
+  job_title: Data Science Intern
+  dates: June 2020 - July 2020
+  description: | # this will include new lines to allow paragraphs
+    Making end to end Machine Learning models.
+    
+    Skills used <mark>Python</mark>, <mark>Keras</mark>, <mark>OpenCV</mark>, <mark>HTML</mark>, <mark>CSS</mark>, <mark>Flask</mark> and <mark>Git/Github</mark>
+ 
+

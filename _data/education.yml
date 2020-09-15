@@ -1,0 +1,31 @@
+# Education Template
+- layout: left
+  name: Guru Gobind Singh Indraprastha University
+  dates: 2017-2021
+  qualification: Bachelor of Technology
+  quote: >
+    Short institution or course description (optional)
+  description: | # this will include new lines to allow paragraphs
+    GPA : 8.433(Till 6 semester)
+    - Marketing and Management​ in I2C (Innovation and Incubation) cell
+    - Volunteered ​ at Lakshya - Training and Placement Society.
+
+- layout: left
+  name: KIIT World School
+  dates: 2015-2016
+  qualification: 12th
+  quote: >
+    Central Board Of Secondary Education
+  description: | # this will include new lines to allow paragraphs
+    Got 91.4% </br>
+    Earned many medals and certificate in Taekwondo tournament. 
+
+- layout: left
+  name: KIIT World School
+  dates: 2013-2014
+  qualification: 10th
+  quote: >
+    Central Board Of Secondary Education
+  description: | # this will include new lines to allow paragraphs
+    Got 9.4 CGPA 
+       

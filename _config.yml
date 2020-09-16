@@ -2,21 +2,20 @@
 repository: rjn01/rjn01.github.io 
 favicon: images/favicon.ico
 
-# Dark Mode (true/false/never)
-darkmode: false
-
 # Personal info
 name: Rajan Puri
 title: Machine Learning intern at Codespeedy
 email: rajanpuri.07@gmail.com
-website: www.github.com/sproogen/resume-theme
+# website: www.github.com/sproogen/resume-theme
+
+# Dark Mode (true/false/never)
+darkmode: false
 
 # Social links
 twitter_username: RJN_01
-github_username:  rjn01
+github_username: rjn01
 instagram_username: rajan_puri20
-linkedin_username:  [-rajan-puri](https://www.linkedin.com/in/-rajan-puri)
- 
+linkedin_username: -rajan-puri
 
 # About Section
 # about_title: About Me
@@ -26,9 +25,9 @@ about_content: | # this will include new lines to allow paragraphs
  
  I have experience in <mark>Data Science</mark> and <mark>Machine Learning</mark>/<mark>Deep Learning</mark> with some basic knowledge in making web apps.
  
-  I speak native <mark>Hindi</mark>, fluent <mark>English</mark>.
+ I speak native <mark>Hindi</mark>, fluent <mark>English</mark>.
 
-  I am most skilled in: <mark>Python</mark> , <mark>Machine Learning</mark> and <mark>Deep Learning</mark>
+ I am most skilled in: <mark>Python</mark> , <mark>Machine Learning</mark> and <mark>Deep Learning</mark>
 
 # Experience Section
 # experience_title: Experience
@@ -45,10 +44,9 @@ about_content: | # this will include new lines to allow paragraphs
 # More Section
 # more_title: A Little More About Me
 more_content: | # this will include new lines to allow paragraphs
-  
   **Additional Experience**
-   - Software engineering virtual experience at ​ JPMorgan Chase & Co.
-   - Volunteer in ​ Umeed- A Drop of Hope​ NGO.
+   - Software engineering virtual experience at JPMorgan Chase & Co.
+   - Volunteer in Umeed- A Drop of Hope NGO.
    
    Alongside my interests in Data Science and Machine Learning some of my other interests and hobbies are:
    - Open Source

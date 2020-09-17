@@ -19,7 +19,7 @@ linkedin_username: -rajan-puri
 
 # About Section
 # about_title: About Me
-about_profile_image: images/profile.jpg
+about_profile_image: images/profile.JPG
 about_content: | # this will include new lines to allow paragraphs
  Hi, My name's Rajan and I'm a Data Science Enthusiast, currently working as Machine Learning/Deep Learning intern at CodeSpeedy.
  
@@ -38,9 +38,6 @@ about_content: | # this will include new lines to allow paragraphs
 # Education Section
 # educaton_title: Education
  
-# Skills section
-# skills_title: SKILLS
-
 # More Section
 # more_title: A Little More About Me
 more_content: | # this will include new lines to allow paragraphs

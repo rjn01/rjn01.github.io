@@ -1,5 +1,5 @@
 layout: top
-skills_content: |
+description: | 
   - <mark>Language</mark> : C/C++, Python, HTML, CSS, Flask
   - <mark>Soft Skills</mark> : Teamwork, Leadership, Communication, Adaptability, Creativity and Critical Thinking
   - <mark>Tools/Software</mark> : Git, Anaconda, Jupyter, Excel, Tableau, Tensorflow/Keras, Scikit-learn

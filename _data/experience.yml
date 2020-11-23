@@ -1,5 +1,11 @@
 # Experience template
 - layout: left
+  company: Nestle India Ltd.
+  link: https://www.nestle.in/
+  job_title: Intern
+  dates: November 2020 - PRESENT
+  
+- layout: left
   company: CodeSpeedy Technology Pvt Limited
   link: https://www.codespeedy.com/
   job_title: Machine Learning/Deep Learning Intern

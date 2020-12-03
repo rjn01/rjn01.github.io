@@ -4,12 +4,12 @@ favicon: images/favicon.ico
 
 # Personal info
 name: Rajan Puri
-title: Machine Learning intern at Codespeedy
+title: IT intern at Nestle India Ltd.
 email: rajanpuri.07@gmail.com
 # website: www.github.com/sproogen/resume-theme
 
 # Dark Mode (true/false/never)
-darkmode: false
+darkmode: true
 
 # Social links
 twitter_username: RJN_01
@@ -21,7 +21,7 @@ linkedin_username: -rajan-puri
 # about_title: About Me
 about_profile_image: images/profile.JPG
 about_content: | # this will include new lines to allow paragraphs
- Hi, My name's Rajan and I'm a Data Science Enthusiast, currently working as Machine Learning/Deep Learning intern at CodeSpeedy.
+ Hi, My name's Rajan and I'm a Data Science Enthusiast, currently working as intern at Nestle India Ltd.
  
  I have experience in <mark>Data Science</mark> and <mark>Machine Learning</mark>/<mark>Deep Learning</mark> with some basic knowledge in making web apps.
  

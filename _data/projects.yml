@@ -5,7 +5,7 @@
   quote: >
     Extraction of number plate 
   description: | # this will include new lines to allow paragraphs
-    YOLO Object detection ALgorithm was used to detect the number plate and then the numbner plate was extracted using OpenCV which is then given to OCR API to extract the text from it. It was deployed on the Web using Flask.
+    YOLO Object detection ALgorithm was used to detect the number plate and then the number plate was extracted using OpenCV which is then given to OCR API to extract the text from it. It was deployed on the Web using Flask.
 
 # Project template
 - layout: top-middle

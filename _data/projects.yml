@@ -1,7 +1,7 @@
 # Project template
 - layout: top-middle
   name: Car Number Plate Extraction
-  github: github.com/rjn01/Car-Plate-Extraction
+  github: rjn01/Car-Plate-Extraction
   quote: >
     Extraction of number plate 
   description: | # this will include new lines to allow paragraphs

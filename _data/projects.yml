@@ -19,17 +19,26 @@
 # Project template
 - layout: top-middle
   name: BLACKJACK
-  github: rjn01/BlackJAck
+  github: rjn01/blackjack
   description: | 
     ​ A Python Program which is similar to the Casino game BlackJack.
     
 # Project template
 - layout: top-middle
   name: Music Generation
-  github: rjn01/Music-Generation/
+  github: rjn01/Music-Generation
   quote: >
     Generate Lyrics 
   description: | 
     ​ Song is given as the input and a new lyrics is generated using Markov Chains Rule.
+    
+# Project template
+- layout: top-middle
+  name: Filcture
+  github: rjn01/Filcture
+  quote: >
+    Filter Web App
+  description: | 
+    ​ A web application of adding filter to an user's image using Neural Style Transfer.
     
 

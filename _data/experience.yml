@@ -2,18 +2,21 @@
 - layout: left
   company: Nestle India Ltd.
   link: https://www.nestle.in/
-  job_title: Intern
+  job_title: IT Intern
   dates: November 2020 - December 2020
   description: | 
-    ▪ Working on Data Analysis, Developing visual reports, and dashboards using Power BI desktop.
+    ▪ Performed Data Analysis and developed visual reports and dashboards of Nestle three months data file using Power BI desktop.
+
+    ▪ Skills used <mark>Python</mark>, <mark>Data Analysis</mark>, <mark>Power BI</mark> and <mark> Presentation skills </mark>
     
+
 - layout: left
   company: CodeSpeedy Technology Pvt Limited
   link: https://www.codespeedy.com/
   job_title: Machine Learning/Deep Learning Intern
   dates: September 2020 - October 2020
   description: | 
-    ▪ Writing Machine Learning/Deep Learning tutorials and articles for valueml.com
+    ▪ Created  Machine Learning/Deep Learning tutorials at Value.ml .
     
     ▪ Skills used <mark>Python</mark>, <mark>Keras</mark> and <mark>OpenCV</mark> 
 

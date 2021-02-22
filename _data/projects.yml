@@ -10,7 +10,7 @@
 # Project template
 - layout: top-middle
   name: Wiki Bot
-  github: https://github.com/rjn01/Wiki-Bot
+  github: rjn01/Wiki-Bot
   quote: >
     WIKIPEDIA TELEGRAM BOT
   description: | 
@@ -19,15 +19,17 @@
 # Project template
 - layout: top-middle
   name: BLACKJACK
-  github: https://github.com/rjn01/BlackJAck
+  github: rjn01/BlackJAck
   description: | 
     ​ A Python Program which is similar to the Casino game BlackJack.
     
 # Project template
 - layout: top-middle
   name: Music Generation
-  github: https://github.com/rjn01/Music-Generation/
+  github: rjn01/Music-Generation/
   quote: >
     Generate Lyrics 
   description: | 
     ​ Song is given as the input and a new lyrics is generated using Markov Chains Rule.
+    
+

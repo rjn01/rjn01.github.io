@@ -1,7 +1,7 @@
 - layout: top
   name: "TECHNICAL SKILLS"
   description: | 
-    - <mark>Language</mark> : C/C++, Python, HTML, CSS, Flask
+    - <mark>Language</mark> : C/C++, Python, HTML, CSS, Flask, SQL
     - <mark>Tools/Software</mark> : Git, Anaconda, Jupyter, Excel, Power BI, Tableau, Tensorflow/Keras, Scikit-learn
     - <mark>Other</mark> : **Machine Learning**, **Deep Learning**, Web Development, Marketing and Management
 

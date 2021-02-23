@@ -4,12 +4,12 @@ favicon: images/favicon.ico
 
 # Personal info
 name: Rajan Puri
-title: IT intern at Nestle India Ltd.
+title: Fresher
 email: rajanpuri.07@gmail.com
 # website: www.github.com/sproogen/resume-theme
 
 # Dark Mode (true/false/never)
-darkmode: true
+darkmode: false
 
 # Social links
 twitter_username: RJN_01
@@ -21,7 +21,7 @@ linkedin_username: -rajan-puri
 # about_title: About Me
 about_profile_image: images/profile.JPG
 about_content: | # this will include new lines to allow paragraphs
- Hi, My name's Rajan and I'm a Data Science Enthusiast, currently working as intern at Nestle India Ltd.
+ Hi, My name's Rajan and I'm a Data Science Enthusiast, worked as intern at Nestle India Ltd.
  
  I have experience in <mark>Data Science</mark> and <mark>Machine Learning</mark>/<mark>Deep Learning</mark> with some basic knowledge in making web apps.
  
@@ -42,6 +42,7 @@ about_content: | # this will include new lines to allow paragraphs
 # more_title: A Little More About Me
 more_content: | # this will include new lines to allow paragraphs
   **Additional Experience**
+   - Open Source Contributions at LoginRadius, Appwrite, Jupyter, Gatsby and Hasura.
    - Software engineering virtual experience at JPMorgan Chase & Co.
    - Volunteer in Umeed- A Drop of Hope NGO.
    

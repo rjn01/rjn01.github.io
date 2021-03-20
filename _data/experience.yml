@@ -1,5 +1,11 @@
 # Experience template
 - layout: left
+  company: Newgen Software
+  link: https://newgensoft.com/
+  job_title: Software Engineer Intern
+  dates: March 2021 - Present
+  
+ - layout: left
   company: Nestle India Ltd.
   link: https://www.nestle.in/
   job_title: IT Intern
@@ -8,8 +14,7 @@
     ▪ Performed Data Analysis and developed visual reports and dashboards of Nestle three months data file using Power BI desktop.
 
     ▪ Skills used <mark>Python</mark>, <mark>Data Analysis</mark>, <mark>Power BI</mark> and <mark> Presentation skills </mark>
-    
-
+   
 - layout: left
   company: CodeSpeedy Technology Pvt Limited
   link: https://www.codespeedy.com/

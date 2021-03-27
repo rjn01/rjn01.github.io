@@ -4,7 +4,7 @@ favicon: images/favicon.ico
 
 # Personal info
 name: Rajan Puri
-title: Fresher
+title: Software Engineer Trainee
 email: rajanpuri.07@gmail.com
 # website: www.github.com/sproogen/resume-theme
 
@@ -21,7 +21,7 @@ linkedin_username: -rajan-puri
 # about_title: About Me
 about_profile_image: images/profile.JPG
 about_content: | # this will include new lines to allow paragraphs
- Hi, My name's Rajan and I'm a Data Science Enthusiast, worked as intern at Nestle India Ltd.
+ Hi, My name's Rajan, working as Software Engineer Trainee at Newgen Software.
  
  I have experience in <mark>Data Science</mark> and <mark>Machine Learning</mark>/<mark>Deep Learning</mark> with some basic knowledge in making web apps.
  

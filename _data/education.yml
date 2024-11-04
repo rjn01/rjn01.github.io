@@ -1,12 +1,19 @@
 # Education Template
 - layout: left
+  name: Freie University Berlin
+  dates: 2024-Present
+  qualification: Master of Science
+  quote: >
+    Data Science
+    
+- layout: left
   name: Guru Gobind Singh Indraprastha University
   dates: 2017-2021
   qualification: Bachelor of Technology
   quote: >
     Computer Science Engineering
   description: | 
-    ▪ GPA : 8.433 (Till 6 semester)
+    - GPA : 8.65
     - Marketing and Management in I2C (Innovation and Incubation) cell
     - Volunteered at Lakshya - Training and Placement Society.
 
@@ -17,7 +24,7 @@
   quote: >
     Central Board Of Secondary Education (CBSE)
   description: | # this will include new lines to allow paragraphs
-    ▪ Got 91.4%  
+    - Got 91.4%  
 
 - layout: left
   name: KIIT World School

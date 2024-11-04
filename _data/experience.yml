@@ -2,15 +2,25 @@
 - layout: left
   company: Newgen Software
   link: https://newgensoft.com/
-  job_title: Software Engineer Intern
-  dates: March 2021 - Present
+  job_title: Senior Software Engineer
+  dates: August 2023 - October 2024
   description: | 
-    ▪ Working onsite at Equity bank for RLOS (Retail Loan Origination). Previously worked on TnM Project (Account and Joint Account Opening and Service request) 
-    and CLOS Project (Loan Process). 
-    ▪ Directly handling and communicating with the clients, data gathering and technical development using Java,Javascript language 
-    and Sql Database and providing production support.
+    • Currently working in Implementation of RLOS system for Banque Misr, Egypt.
+    • Successfully Delivered Rlos Banking system for Equity Bank Kenya and Subsidiaries (UGANDA, RWANDA, DRC and TANZANIA). 
+    • Developed and implemented new features, Led a team of developers to successfully deliver the RLOS (Retail Loan Origination) project for Equity bank Kenya within a tight deadline, making the project live in 2 months.
+
+
+- layout: left
+  company: Newgen Software
+  link: https://newgensoft.com/
+  job_title: Software Engineer
+  dates: March 2021 - July 2023
+  description: | 
+    ▪ Worked on implementation of Corporate Loan Origination Process for Equity Bank Subsidiaries: Tanzania, Rwanda and Uganda. Previously, worked on Account Opening Process and Joint Account Opening Process for Equity Bank Kenya.
+      Work includes, Direct communication and handling with clients, data gathering and implemention using technologies like Java, Oracle Sql and JavaScript and Production Support.
+
   
- - layout: left
+- layout: left
   company: Nestle India Ltd.
   link: https://www.nestle.in/
   job_title: IT Intern

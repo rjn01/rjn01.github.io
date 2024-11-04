@@ -5,10 +5,16 @@
   job_title: Senior Software Engineer
   dates: August 2023 - October 2024
   description: | 
-    • Currently working in Implementation of RLOS system for Banque Misr, Egypt.
-    • Successfully Delivered Rlos Banking system for Equity Bank Kenya and Subsidiaries (UGANDA, RWANDA, DRC and TANZANIA). 
-    • Developed and implemented new features, Led a team of developers to successfully deliver the RLOS (Retail Loan Origination) project for Equity bank Kenya within a tight deadline, making the project live in 2 months.
-
+    • Worked on implementation of the RLOS process for <mark>Banque Mishr (Egypt)</mark>. Leading and guiding the team from 
+      Offshore, working on <mark>integration</mark> to fetch the data from the bank third party system and generate credit 
+      cards and loan accounts, <mark>document upload and view</mark> functionality using <mark>Filenet, Report 
+      generation</mark> according to business needs and implementation of other major business functionalities.
+    • Worked onsite in Kenya for implementation and production support of RLOS project for <mark>Equity Bank     
+      Subsidiaries(Uganda, Rwanda, Congo, and Tanzania)</mark> for making their Retail loan process <mark>faster and more 
+      efficient.
+    • Developed and implemented new features and business validation, led a team of developers to successfully deliver the 
+      RLOS (Retail Loan Origination) project for Equity Bank Kenya within a tight deadline, making the <mark>project live in 2 
+      months</mark>.
 
 - layout: left
   company: Newgen Software
@@ -16,10 +22,11 @@
   job_title: Software Engineer
   dates: March 2021 - July 2023
   description: | 
-    ▪ Worked on implementation of Corporate Loan Origination Process for Equity Bank Subsidiaries: Tanzania, Rwanda and Uganda. Previously, worked on Account Opening Process and Joint Account Opening Process for Equity Bank Kenya.
-      Work includes, Direct communication and handling with clients, data gathering and implemention using technologies like Java, Oracle Sql and JavaScript and Production Support.
-
-  
+    ▪ Worked onsite at <mark>Equity Bank for implementation of <mark>CLOS Project (Corporate Loan Process)</mark> and 
+      <mark>TnM Project (Account and Joint Account Opening and Service request)</mark>. Work includes directly <mark>handling 
+      and communicating</mark> with the clients, <mark>data gathering</mark>, and technical development using <mark>Java, 
+      Javascript language, and Sql Database</mark> and providing <mark>production support</mark> and demonstrated teamwork 
+      resulting in faster loan and account opening process in East Africa.
 - layout: left
   company: Nestle India Ltd.
   link: https://www.nestle.in/

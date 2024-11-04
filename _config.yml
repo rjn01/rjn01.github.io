@@ -24,14 +24,15 @@ about_content: |
   I am a driven Master's student at Freie Universität Berlin, specializing in Data Science. With a strong background as a Senior Software Engineer, I am dedicated to leveraging technology to enhance efficiency and improve customer experiences.
   In my previous role, I played a pivotal part in implementing the Retail Loan Origination System (RLOS) for a bank, where I optimized loan processes and led cross-functional teams to deliver impactful projects on time. My proficiency in Java, Python, and SQL, along with hands-on experience in machine learning and web development, has equipped me with a diverse skill set to tackle complex challenges effectively.
 
+# Education Section
+# education_title: Education  # Fixed typo
+
+
 # Experience Section
 # experience_title: Experience
 
 # Projects Section
 # projects_title: Skills
-
-# Education Section
-# education_title: Education  # Fixed typo
  
 # More Section
 # more_title: A Little More About Me

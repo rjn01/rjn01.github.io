@@ -5,7 +5,7 @@ favicon: images/favicon.ico
 # Personal info
 name: Rajan Puri
 title: Senior Software Engineer
-email: rajanpuri.07@gmail.com
+email: purirajan98@gmail.com
 # website: www.github.com/sproogen/resume-theme
 
 # Dark Mode (true/false/never)
@@ -21,23 +21,8 @@ linkedin_username: -rajan-puri
 # about_title: About Me
 about_profile_image: images/profile.JPG
 about_content: | 
-  Driven Senior Software Engineer with a strong commitment to leveraging technology to propel innovation and efficiency. 
-  Presently, I am at the forefront of implementing the Retail Loan Origination System (RLOS) for a Bank, where I am optimizing loan processes to elevate the overall customer experience. 
-  My career journey has been marked by a track record of leading cross-functional teams and delivering impactful projects within stringent timelines. 
-  Proficient in Java, Python, and SQL, I possess hands-on experience in diverse domains including machine learning, deep learning, and web development.
-
-  With a keen eye for detail and a penchant for problem-solving, I excel in navigating complex challenges and crafting robust solutions. 
-  My tenure as a Senior Software Engineer at Newgen Software has equipped me with invaluable insights into implementing RLOS solutions for financial institutions across East Africa. 
-  Notably, I led the successful delivery of the RLOS project for Equity Bank Kenya, streamlining the loan origination process and significantly reducing time-to-approval through the implementation of innovative features.
-
-  In addition to my software engineering expertise, I am deeply passionate about exploring the realms of data science and machine learning. 
-  My journey includes hands-on experience in analyzing data, developing machine learning models, and contributing to open-source projects aimed at advancing the field. 
-  Furthermore, I hold certifications in Machine Learning from esteemed institutions such as Stanford University and AWS, underscoring my commitment to continuous learning and professional development.
-
-  As I continue to expand my horizons in the technology landscape, I am eager to explore opportunities that allow me to leverage my skills and expertise to drive meaningful impact. 
-  Whether it's optimizing business processes, harnessing data insights, or pioneering innovative solutions, I am poised to contribute effectively to projects that push the boundaries of what's possible. 
-  If you're seeking a dedicated professional with a proven track record of delivering results and a passion for innovation, I invite you to connect with me. 
-  Let's collaborate to turn ideas into reality and shape the future of technology together.
+  I am a driven Master's student at Freie Universität Berlin, specializing in Data Science. With a strong background as a Senior Software Engineer, I am dedicated to leveraging technology to enhance efficiency and improve customer experiences.
+  In my previous role, I played a pivotal part in implementing the Retail Loan Origination System (RLOS) for a bank, where I optimized loan processes and led cross-functional teams to deliver impactful projects on time. My proficiency in Java, Python, and SQL, along with hands-on experience in machine learning and web development, has equipped me with a diverse skill set to tackle complex challenges effectively.
 
 # Experience Section
 # experience_title: Experience

@@ -4,7 +4,7 @@ favicon: images/favicon.ico
 
 # Personal info
 name: Rajan Puri
-title: Software Engineer Trainee
+title: Senior Software Engineer
 email: rajanpuri.07@gmail.com
 # website: www.github.com/sproogen/resume-theme
 
@@ -14,20 +14,20 @@ darkmode: false
 # Social links
 twitter_username: RJN_01
 github_username: rjn01
-instagram_username: rajan_puri20
+instagram_username: __rjn01
 linkedin_username: -rajan-puri
 
 # About Section
 # about_title: About Me
 about_profile_image: images/profile.JPG
 about_content: | # this will include new lines to allow paragraphs
- Hi, My name's Rajan, working as Software Engineer Trainee at Newgen Software.
- 
- I have experience in <mark>Data Science</mark> and <mark>Machine Learning</mark>/<mark>Deep Learning</mark> with some basic knowledge in making web apps.
- 
- I speak native <mark>Hindi</mark>, fluent <mark>English</mark>.
+ Driven Senior Software Engineer with a strong commitment to leveraging technology to propel innovation and efficiency. Presently, I am at the forefront of implementing the Retail Loan Origination System (RLOS) for a Bank, where I am optimizing loan processes to elevate the overall customer experience. My career journey has been marked by a track record of leading cross-functional teams and delivering impactful projects within stringent timelines. Proficient in Java, Python, and SQL, I possess hands-on experience in diverse domains including machine learning, deep learning, and web development.
 
- I am most skilled in: <mark>Python</mark> , <mark>Machine Learning</mark> and <mark>Deep Learning</mark>
+With a keen eye for detail and a penchant for problem-solving, I excel in navigating complex challenges and crafting robust solutions. My tenure as a Senior Software Engineer at Newgen Software has equipped me with invaluable insights into implementing RLOS solutions for financial institutions across East Africa. Notably, I led the successful delivery of the RLOS project for Equity Bank Kenya, streamlining the loan origination process and significantly reducing time-to-approval through the implementation of innovative features.
+
+In addition to my software engineering expertise, I am deeply passionate about exploring the realms of data science and machine learning. My journey includes hands-on experience in analyzing data, developing machine learning models, and contributing to open-source projects aimed at advancing the field. Furthermore, I hold certifications in Machine Learning from esteemed institutions such as Stanford University and AWS, underscoring my commitment to continuous learning and professional development.
+
+As I continue to expand my horizons in the technology landscape, I am eager to explore opportunities that allow me to leverage my skills and expertise to drive meaningful impact. Whether it's optimizing business processes, harnessing data insights, or pioneering innovative solutions, I am poised to contribute effectively to projects that push the boundaries of what's possible. If you're seeking a dedicated professional with a proven track record of delivering results and a passion for innovation, I invite you to connect with me. Let's collaborate to turn ideas into reality and shape the future of technology together.
 
 # Experience Section
 # experience_title: Experience

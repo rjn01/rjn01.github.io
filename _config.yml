@@ -19,10 +19,10 @@ linkedin_username: -rajan-puri
 
 # About Section
 # about_title: About Me
-about_profile_image: images/profile.JPG
+about_profile_image: images/rajan_pic.jpg
 about_content: | 
   I am a driven Master's student at Freie Universität Berlin, specializing in Data Science. With a strong background as a Senior Software Engineer, I am dedicated to leveraging technology to enhance efficiency and improve customer experiences.
-  In my previous role, I played a pivotal part in implementing the Retail Loan Origination System (RLOS) for a bank, where I optimized loan processes and led cross-functional teams to deliver impactful projects on time. My proficiency in Java, Python, and SQL, along with hands-on experience in machine learning and web development, has equipped me with a diverse skill set to tackle complex challenges effectively.
+  In my previous role, I was pivotal in implementing the Retail Loan Origination System (RLOS) for a bank. I optimized loan processes and led cross-functional teams to deliver impactful projects on time. My proficiency in Java, Python, and SQL, along with hands-on experience in machine learning and web development, has equipped me with a diverse skill set to tackle complex challenges effectively.
 
 # Education Section
 # education_title: Education  # Fixed typo
@@ -42,7 +42,7 @@ more_content: |
    - Software engineering virtual experience at JPMorgan Chase & Co.
    - Volunteer in Umeed- A Drop of Hope NGO.
    
-   Alongside my interests in Data Science and Machine Learning some of my other interests and hobbies are:
+   Alongside my interests in Data Science and Machine Learning, some of my other interests and hobbies are:
    - Open Source
    - Listening to music
    - Reading

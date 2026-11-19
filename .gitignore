@@ -1,0 +1,5 @@
+# local-only files
+.claude/
+/Rajan_Puri_CV.docx
+/Rajan_Puri_CV.pdf
+.DS_Store

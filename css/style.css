@@ -1,0 +1,330 @@
+/* =====================================================================
+   style.css  —  Comic + futuristic theme
+   ---------------------------------------------------------------------
+   1. Design tokens (colours, fonts, slant size)  <- tweak the look here
+   2. Base + nav
+   3. Comic page system (.page / .row / .panel / slants)
+   4. Panel contents (captions, bubbles, chips, sfx)
+   5. Sections (hero, stats, experience, education, contact)
+   6. Animations + responsive
+   ===================================================================== */
+
+/* ---------- 1. DESIGN TOKENS ---------- */
+:root {
+  --ink: #07040f;          /* comic black outlines / page background */
+  --night: #0e0b1a;        /* site background */
+  --panel: #120a2a;        /* panel fallback colour */
+  --paper: #f6f1e7;        /* the white "page" between panels */
+  --pink: #ff4fa3;
+  --cyan: #3cf2ff;
+  --violet: #8a5cff;
+  --yellow: #ffe66b;
+  --text: #f4f1ff;
+  --muted: #b9b3d6;
+
+  --font-comic: "Bangers", "Impact", sans-serif;
+  --font-body: "Onest", system-ui, sans-serif;
+  --font-mono: "Fragment Mono", ui-monospace, monospace;
+
+  --g: 10px;               /* gutter width between panels */
+  --s: 34px;               /* how strongly panels are slanted */
+  --max: 1200px;
+}
+
+/* ---------- 2. BASE ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text);
+  background:
+    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, .06) 1px, transparent 0) 0 0 / 14px 14px,
+    radial-gradient(ellipse at top, #2a0f55 0%, transparent 60%),
+    var(--night);
+  line-height: 1.55;
+  overflow-x: hidden;
+}
+a { color: inherit; }
+h1, h2, h3 { margin: 0; line-height: 1.05; }
+.mono { font-family: var(--font-mono); font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; }
+
+.power-meter { position: fixed; inset: 0 0 auto 0; height: 4px; z-index: 60; background: transparent; }
+.power-meter span { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--cyan), var(--pink), var(--yellow)); }
+
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+  display: flex; align-items: center; gap: 24px;
+  padding: 14px clamp(16px, 4vw, 40px);
+  background: rgba(14, 11, 26, .78);
+  backdrop-filter: blur(10px);
+  border-bottom: 3px solid var(--ink);
+}
+.logo { font-family: var(--font-comic); font-size: 1.9rem; letter-spacing: .04em; text-decoration: none; text-shadow: 2px 2px 0 var(--pink); }
+.logo span { color: var(--cyan); }
+.nav nav { display: flex; gap: 22px; margin-left: auto; }
+.nav nav a { font-family: var(--font-mono); font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; text-decoration: none; color: var(--muted); transition: color .2s; }
+.nav nav a:hover { color: var(--cyan); }
+.burger { display: none; background: none; border: 0; color: var(--text); font-size: 1.6rem; cursor: pointer; }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 12px 20px;
+  font-family: var(--font-mono); font-size: .8rem; text-transform: uppercase; letter-spacing: .1em; text-decoration: none;
+  color: var(--ink); background: var(--yellow);
+  border: 3px solid var(--ink); box-shadow: 4px 4px 0 var(--pink);
+  transition: transform .15s, box-shadow .15s;
+}
+.btn:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--cyan); }
+.btn-ghost { background: var(--paper); }
+.btn-small { padding: 8px 14px; box-shadow: 3px 3px 0 var(--pink); }
+
+/* ---------- 3. COMIC PAGE SYSTEM ----------
+   .page  = the paper sheet (white border + white gutters)
+   .row   = a horizontal strip of panels. .slant-b / .slant-t give it
+            slanted bottom / top edges so gutters between strips are diagonal.
+   .panel = one comic frame. .slant-r / .slant-l give slanted side edges.  */
+.page {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: var(--g);
+  background: var(--paper);
+  display: flex; flex-direction: column; gap: var(--g);
+  box-shadow: 10px 10px 0 var(--ink);
+}
+.row { display: flex; gap: var(--g); clip-path: polygon(0 var(--tl, 0px), 100% 0, 100% calc(100% - var(--br, 0px)), 0 100%); }
+.row.slant-b { --br: var(--s); }
+.row.slant-t { --tl: var(--s); }
+.row-after-b { margin-top: calc(-1 * var(--s)); }
+
+.panel {
+  position: relative; flex: 1 1 0; min-width: 0;
+  min-height: 340px;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  background: var(--panel);
+  overflow: hidden;
+  clip-path: polygon(var(--lt, 0px) 0, 100% 0, calc(100% - var(--rb, 0px)) 100%, 0 100%);
+}
+.slant-r { --rb: var(--s); }
+.slant-l { --lt: var(--s); margin-left: calc(-1 * var(--s)); }
+
+/* the illustration fills the panel; a dark gradient keeps text readable */
+.art { position: absolute; inset: 0; }
+.art svg { width: 100%; height: 100%; display: block; transition: transform .6s cubic-bezier(.2, .8, .2, 1); }
+.panel:hover .art svg { transform: scale(1.06); }
+.panel > .art::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(7, 4, 15, 0) 25%, rgba(7, 4, 15, .82) 70%, rgba(7, 4, 15, .95));
+}
+.panel-body { position: relative; z-index: 2; padding: 28px 30px calc(28px + var(--s)) calc(30px + var(--s) * .4); }
+.panel-body h3 { font-family: var(--font-comic); font-weight: 400; font-size: clamp(1.7rem, 3vw, 2.3rem); letter-spacing: .03em; text-shadow: 2px 2px 0 var(--ink); }
+.panel-body p { margin: .5em 0 0; color: #ddd8f5; }
+.panel-xl { min-height: clamp(380px, 62vh, 620px); }
+.panel-lg { min-height: 420px; }
+.panel-tall { min-height: 480px; }
+.kicker { color: var(--cyan); margin: 0 0 8px !important; }
+.company { color: var(--yellow) !important; font-weight: 600; }
+.center { text-align: center; align-items: center; justify-content: center; }
+.mt { margin-top: 22px; }
+
+/* ---------- 4. PANEL CONTENTS ---------- */
+.caption-box {
+  position: absolute; z-index: 3; top: 26px; right: 26px; max-width: 360px;
+  display: flex; flex-direction: column; gap: 6px;
+  padding: 14px 18px;
+  color: var(--ink); background: var(--paper);
+  border: 3px solid var(--ink); box-shadow: 5px 5px 0 var(--ink);
+}
+.caption-box strong { font-size: 1.25rem; font-weight: 800; }
+.caption-box small { color: #5b1fa8; }
+
+.bubble {
+  position: absolute; z-index: 3; left: clamp(20px, 6vw, 70px); top: 34%;
+  max-width: 300px; padding: 16px 20px;
+  font-family: var(--font-comic); font-size: 1.45rem; letter-spacing: .03em; line-height: 1.15;
+  color: var(--ink); background: #fff;
+  border: 3px solid var(--ink); border-radius: 28px;
+  box-shadow: 4px 4px 0 var(--ink);
+}
+.bubble::after {
+  content: ""; position: absolute; left: 44px; bottom: -22px;
+  width: 26px; height: 24px; background: #fff;
+  border-right: 3px solid var(--ink); border-bottom: 3px solid var(--ink);
+  transform: skewX(-30deg) rotate(10deg);
+}
+
+.link { display: inline-block; margin-top: 14px; text-decoration: none; border-bottom: 2px solid var(--pink); padding-bottom: 2px; }
+.caption-box .link { margin-top: 2px; align-self: flex-start; }
+.link:hover { color: var(--cyan); border-color: var(--cyan); }
+.muted { color: var(--muted); border-color: var(--muted); }
+
+.chips, .tags { list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.chips li {
+  padding: 5px 10px; font-size: .85rem; font-weight: 600;
+  color: var(--ink); background: var(--paper);
+  border: 2px solid var(--ink); box-shadow: 3px 3px 0 var(--pink);
+  transition: transform .15s;
+}
+.chips li:nth-child(3n + 2) { box-shadow: 3px 3px 0 var(--cyan); }
+.chips li:nth-child(3n) { box-shadow: 3px 3px 0 var(--yellow); }
+.chips li:hover { transform: rotate(-3deg) scale(1.08); }
+.tags { margin: 0 0 12px; }
+.tags li { font-family: var(--font-mono); font-size: .7rem; text-transform: uppercase; letter-spacing: .1em; padding: 3px 8px; border: 1px solid var(--cyan); color: var(--cyan); background: rgba(7, 4, 15, .6); }
+
+.sfx {
+  position: absolute; z-index: 3; top: 18px; left: 22px;
+  font-family: var(--font-comic); font-size: clamp(2rem, 4vw, 3rem); letter-spacing: .04em;
+  color: var(--yellow); -webkit-text-stroke: 2px var(--ink);
+  text-shadow: 4px 4px 0 var(--pink);
+  transform: rotate(-8deg);
+}
+
+.points { margin: 14px 0 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.points li { position: relative; padding-left: 26px; color: #ddd8f5; }
+.points li::before { content: "▸"; position: absolute; left: 4px; color: var(--pink); font-weight: 800; }
+
+/* ---------- 5. SECTIONS ---------- */
+main { padding: 96px clamp(12px, 3vw, 32px) 40px; }
+
+/* HERO */
+.title-xl {
+  font-family: var(--font-comic); font-weight: 400;
+  font-size: clamp(3.2rem, 10vw, 8rem); letter-spacing: .02em; line-height: .9;
+  text-shadow: 3px 3px 0 var(--ink), 7px 7px 0 var(--pink);
+}
+.lead { font-size: clamp(1rem, 1.6vw, 1.2rem); max-width: 640px; }
+.center .lead { margin-inline: auto; }
+.cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 24px; }
+.hero-bottom .panel-body { max-width: 860px; }
+
+/* STATS — comic "burst" stickers */
+.stats {
+  max-width: var(--max); margin: 56px auto 24px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 20px;
+}
+.burst {
+  position: relative; aspect-ratio: 1 / .78;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+  color: var(--ink); filter: drop-shadow(5px 5px 0 var(--ink));
+  transform: rotate(var(--tilt));
+}
+.burst::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: var(--yellow);
+  clip-path: polygon(50.0% 0.0%, 58.9% 11.0%, 71.7% 5.0%, 74.9% 18.7%, 89.1% 18.8%, 86.0% 32.6%, 98.7% 38.9%, 90.0% 50.0%, 98.7% 61.1%, 86.0% 67.4%, 89.1% 81.2%, 74.9% 81.3%, 71.7% 95.0%, 58.9% 89.0%, 50.0% 100.0%, 41.1% 89.0%, 28.3% 95.0%, 25.1% 81.3%, 10.9% 81.2%, 14.0% 67.4%, 1.3% 61.1%, 10.0% 50.0%, 1.3% 38.9%, 14.0% 32.6%, 10.9% 18.8%, 25.1% 18.7%, 28.3% 5.0%, 41.1% 11.0%);
+}
+.burst:nth-child(2)::before { background: var(--cyan); }
+.burst:nth-child(3)::before { background: var(--pink); }
+.burst:nth-child(4)::before { background: #c9b8ff; }
+.burst strong { font-family: var(--font-comic); font-weight: 400; font-size: clamp(2.4rem, 4vw, 3.2rem); line-height: 1; }
+.burst span { font-family: var(--font-mono); font-size: .68rem; text-transform: uppercase; letter-spacing: .08em; max-width: 60%; }
+
+/* CHAPTER HEADERS */
+.chapter { padding-top: 72px; }
+.chapter-head { max-width: var(--max); margin: 0 auto 26px; }
+.chapter-head .mono { color: var(--pink); }
+.chapter-head h2 {
+  font-family: var(--font-comic); font-weight: 400;
+  font-size: clamp(2.8rem, 7vw, 5rem); letter-spacing: .03em; color: var(--yellow);
+  text-shadow: 3px 3px 0 var(--ink), 6px 6px 0 var(--violet);
+}
+.chapter-head p { color: var(--muted); margin: 6px 0 0; }
+
+/* EXPERIENCE — wide panels: illustration + text, separated by a slanted gutter */
+.panel-wide { flex-direction: row; justify-content: stretch; background: transparent; gap: var(--g); min-height: 360px; }
+.panel-wide:hover .art svg { transform: none; }
+.wide-art { position: relative; flex: 0 0 38%; overflow: hidden; background: var(--panel); clip-path: polygon(0 0, 100% 0, calc(100% - var(--s)) 100%, 0 100%); }
+.wide-art:hover .art svg { transform: scale(1.06); }
+.wide-body {
+  flex: 1; margin-left: calc(-1 * var(--s));
+  padding: 34px 36px calc(30px + var(--s)) calc(36px + var(--s));
+  background: linear-gradient(135deg, #1a0d3a, #0b0620);
+  clip-path: polygon(var(--s) 0, 100% 0, 100% 100%, 0 100%);
+}
+.wide-body h3 { font-family: var(--font-comic); font-weight: 400; font-size: clamp(1.9rem, 3.4vw, 2.6rem); letter-spacing: .03em; }
+.panel-wide.flip { flex-direction: row-reverse; }
+.panel-wide.flip .sfx { left: auto; right: 22px; transform: rotate(8deg); }
+.panel-wide.flip .wide-art { clip-path: polygon(var(--s) 0, 100% 0, 100% 100%, 0 100%); margin-left: calc(-1 * var(--s)); }
+.panel-wide.flip .wide-body { margin-left: 0; padding: 34px calc(36px + var(--s)) calc(30px + var(--s)) 36px; clip-path: polygon(0 0, 100% 0, calc(100% - var(--s)) 100%, 0 100%); }
+
+/* EDUCATION — cream "text box" panel */
+.paper-panel {
+  background: radial-gradient(circle at 1px 1px, rgba(0, 0, 0, .12) 1px, transparent 0) 0 0 / 8px 8px, #fff1a8;
+  color: var(--ink); justify-content: flex-start;
+}
+.paper-panel .panel-body { padding-top: 30px; }
+.paper-panel h3 { text-shadow: 2px 2px 0 var(--pink); }
+.paper-panel .points li { color: #2a2340; }
+.meter { margin-top: 12px; }
+.meter-top { display: flex; justify-content: space-between; gap: 10px; font-weight: 600; }
+.meter-top .mono { font-size: .68rem; color: #5b1fa8; }
+.meter-bar { height: 14px; margin-top: 4px; border: 2px solid var(--ink); background: #fff; }
+.meter-bar span { display: block; height: 100%; width: 0; background: repeating-linear-gradient(-45deg, var(--pink) 0 8px, var(--violet) 8px 16px); transition: width 1.2s cubic-bezier(.2, .8, .2, 1) .3s; }
+.in .meter-bar span { width: var(--w); }
+
+/* CONTACT */
+.contact-panel { min-height: 460px; }
+.contact-panel .panel-body { padding: 60px 30px; }
+.contact-panel > .art::after { background: rgba(7, 4, 15, .72); }
+
+.footer {
+  max-width: var(--max); margin: 30px auto 0; padding: 24px clamp(12px, 3vw, 32px) 40px;
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; color: var(--muted);
+}
+
+/* ---------- 6. ANIMATIONS ---------- */
+.reveal { opacity: 0; transform: translateY(34px) scale(.97); transition: opacity .7s ease, transform .7s cubic-bezier(.2, .8, .2, 1); }
+.reveal.in { opacity: 1; transform: none; }
+.burst.reveal { transform: scale(.3) rotate(calc(var(--tilt) * 4)); transition-delay: var(--delay); transition-timing-function: cubic-bezier(.3, 1.6, .5, 1); }
+.burst.reveal.in { transform: rotate(var(--tilt)); }
+.burst:hover { transform: rotate(0) scale(1.06) !important; }
+.bubble.reveal { transform: scale(.4) rotate(-6deg); transform-origin: bottom left; transition-delay: .5s; transition-timing-function: cubic-bezier(.3, 1.6, .5, 1); }
+.bubble.reveal.in { transform: none; }
+
+/* SVG micro-animations (class names used in js/art.js) */
+.pulse { stroke-dasharray: 8 6; animation: dash 1.6s linear infinite; }
+.blink { animation: blink 4s infinite; transform-origin: center; transform-box: fill-box; }
+.scan { animation: scan 2.4s ease-in-out infinite alternate; }
+@keyframes dash { to { stroke-dashoffset: -28; } }
+@keyframes blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(.1); } }
+@keyframes scan { from { transform: translateY(0); } to { transform: translateY(100px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .reveal, .burst.reveal, .bubble.reveal { opacity: 1; transform: none; }
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 860px) {
+  .nav nav {
+    position: absolute; top: 100%; left: 0; right: 0;
+    flex-direction: column; gap: 0; padding: 8px 0;
+    background: var(--night); border-bottom: 3px solid var(--ink);
+    display: none;
+  }
+  .nav nav.open { display: flex; }
+  .nav nav a { padding: 12px 24px; }
+  .burger { display: block; }
+  .nav .btn-small { margin-left: auto; }
+}
+
+@media (max-width: 760px) {
+  :root { --s: 22px; }
+  /* stack panels vertically; drop the side slants */
+  .row { flex-direction: column; }
+  .slant-l { margin-left: 0; --lt: 0px; }
+  .slant-r { --rb: 0px; }
+  .panel { flex: none; min-height: 300px; } /* grow to fit content when stacked */
+  .panel > .art::after { background: linear-gradient(180deg, rgba(7, 4, 15, .15) 0%, rgba(7, 4, 15, .9) 45%); }
+  .hero .panel-xl > .art::after { background: rgba(7, 4, 15, .15); }
+  .panel-xl { min-height: 520px; }
+  .caption-box { left: 16px; right: 16px; top: 16px; max-width: none; }
+  .bubble { top: auto; bottom: 60px; left: 16px; right: 16px; max-width: none; font-size: 1.25rem; }
+  .panel-body { padding: 22px 20px calc(22px + var(--s)); }
+
+  .panel-wide, .panel-wide.flip { flex-direction: column; }
+  .wide-art, .panel-wide.flip .wide-art { flex-basis: 220px; margin: 0; clip-path: none; }
+  .wide-body, .panel-wide.flip .wide-body { margin: 0; padding: 24px 20px calc(24px + var(--s)); clip-path: none; }
+  .stats { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+}

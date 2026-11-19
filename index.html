@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rajan Puri — AI Builder</title>
+  <meta name="description" content="Rajan Puri — Data Scientist & AI Builder in Berlin. Comic-style portfolio." />
+
+  <!-- Fonts: Bangers = comic headlines, Onest = body text, Fragment Mono = labels (same pair deeptech.build uses) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fragment+Mono&family=Onest:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Scroll progress "power meter" -->
+  <div class="power-meter"><span id="power"></span></div>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav">
+    <a href="#top" class="logo">RAJAN<span>.ai</span></a>
+    <nav id="nav-links">
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Training</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-small" id="cv-link" href="#" download>CV ↓</a>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+  </header>
+
+  <main id="top">
+    <!-- ================= HERO (issue cover) ================= -->
+    <section class="page hero" aria-label="Intro">
+      <div class="row slant-b">
+        <article class="panel panel-xl">
+          <div class="art" data-art="city"></div>
+          <div class="caption-box reveal">
+            <small class="mono">ISSUE #01 · <span id="hero-location"></span></small>
+            <strong id="hero-tagline"></strong>
+            <a href="#experience" class="mono link">ORIGIN STORY →</a>
+          </div>
+          <div class="bubble reveal" id="hero-bubble"></div>
+        </article>
+      </div>
+      <div class="row slant-t row-after-b">
+        <article class="panel panel-lg hero-bottom">
+          <div class="art" data-art="robot"></div>
+          <div class="panel-body">
+            <p class="mono kicker">THE AI BUILDER</p>
+            <h1 class="title-xl" id="hero-name"></h1>
+            <p class="lead" id="hero-intro"></p>
+            <div class="cta">
+              <a href="#projects" class="btn">See the builds →</a>
+              <a href="#contact" class="btn btn-ghost">Say hi</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= STATS ================= -->
+    <section class="stats" id="stats" aria-label="Highlights"></section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="chapter" id="skills">
+      <header class="chapter-head reveal">
+        <span class="mono">CHAPTER 01 //</span>
+        <h2>The Arsenal</h2>
+        <p>Every hero needs gadgets. These are mine.</p>
+      </header>
+      <div class="page" id="skills-grid"></div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="chapter" id="experience">
+      <header class="chapter-head reveal">
+        <span class="mono">CHAPTER 02 //</span>
+        <h2>Origin Story</h2>
+        <p>From banking platforms across Africa to 5G research in Berlin.</p>
+      </header>
+      <div class="page" id="experience-list"></div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="chapter" id="projects">
+      <header class="chapter-head reveal">
+        <span class="mono">CHAPTER 03 //</span>
+        <h2>The Builds</h2>
+        <p>Side quests where I teach machines to see, feel and paint.</p>
+      </header>
+      <div class="page" id="projects-grid"></div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section class="chapter" id="education">
+      <header class="chapter-head reveal">
+        <span class="mono">CHAPTER 04 //</span>
+        <h2>Training Arc</h2>
+        <p>Levelling up, one course at a time.</p>
+      </header>
+      <div class="page" id="education-grid"></div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="chapter" id="contact">
+      <div class="page">
+        <div class="row">
+          <article class="panel panel-lg contact-panel">
+            <div class="art" data-art="city"></div>
+            <div class="panel-body center">
+              <p class="mono kicker">NEXT ISSUE</p>
+              <h2 class="title-xl">To Be Continued…</h2>
+              <p class="lead">Building something with AI? Need a developer who has shipped to real banks and real users? Let's team up.</p>
+              <div class="cta center" id="contact-links"></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer mono">
+    <span>© <span id="year"></span> <span id="footer-name"></span></span>
+    <span>Drawn with HTML, CSS &amp; a lot of ☕</span>
+  </footer>
+
+  <!-- Order matters: data first, then the illustrations, then the renderer -->
+  <script src="js/data.js"></script>
+  <script src="js/art.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

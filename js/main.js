@@ -19,7 +19,7 @@
 
   /* Layout helper: splits a list into rows of `perRow` comic panels.
      Panels in the same row get slanted vertical gutters between them,
-     consecutive rows get slanted horizontal gutters (like deeptech.build). */
+     consecutive rows get slanted horizontal gutters. */
   function comicRows(items, perRow, renderPanel) {
     const rows = [];
     for (let i = 0; i < items.length; i += perRow) rows.push(items.slice(i, i + perRow));

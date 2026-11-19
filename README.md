@@ -2,17 +2,10 @@
 
 A personal resume website styled like a sci-fi comic book: slanted comic panels, speech bubbles,
 "sound-effect" stickers, halftone dots and synthwave AI illustrations.
-The style is inspired by [deeptech.build](https://www.deeptech.build/).
 
-> **What is deeptech.build built with?**
-> It is made with **[Framer](https://www.framer.com/)**, a visual no-code website builder (the page has
-> `<meta name="generator" content="Framer …">` and loads its scripts from `framerusercontent.com`).
-> The fonts are **Onest** (text) and **Fragment Mono** (small labels). The illustrations are
-> AI-generated synthwave images laid out in slanted comic panels with white gutters.
->
-> This project recreates the *style* without Framer, using plain **HTML + CSS + JavaScript**, with no
-> framework, no build step and no dependencies. All illustrations are hand-coded SVG, so they are
-> tiny and sharp at any size.
+Built with plain **HTML + CSS + JavaScript**: no framework, no build step, no dependencies.
+All illustrations are hand-coded SVG, so they are tiny and sharp at any size.
+Fonts: **Bangers** (comic headings), **Onest** (text) and **Fragment Mono** (labels), all free Google Fonts.
 
 ---
 
@@ -158,7 +151,7 @@ rocket: () => svg((id) => `
 ```
 Then use `art: "rocket"` in `data.js`. `sunAndGrid()` and `skyline()` are ready-made backgrounds.
 
-**Use a real image instead** (e.g. AI-generated art like deeptech.build uses): put `my.jpg` in
+**Use a real image instead** (e.g. your own AI-generated art): put `my.jpg` in
 `assets/`. Then in `main.js` → `initArt()`, render `<img src="assets/my.jpg">` when the `art` value
 ends in `.jpg`:
 ```js
